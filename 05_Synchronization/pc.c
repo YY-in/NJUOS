@@ -31,7 +31,6 @@ void Tconsume() {
     mutex_lock(&lk);
     // 判断条件是否成立
     /**
-     * @brief
      * 此处存在自旋，我们希望将自旋变成顺延
       if (!(count > 0)) {
       mutex_unlock(&lk);
